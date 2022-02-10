@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'otp',
     loadChildren: () => import('./otp/otp.module').then(m => m.OtpPageModule)
+  },
+  {
+    path: 'new',
+    loadChildren: () => import('./new/new.module').then( m => m.NewPageModule)
   }
 ];
 
